@@ -2839,6 +2839,7 @@ function loadEventHandlers(blocks, myBlock) {
     });
 
     myBlock.container.on('pressup', function(event) {
+	blocks.setDraggingFlag(true);
 	displayMsg(blocks, 'pressup');
     });
 
@@ -2873,6 +2874,7 @@ function loadEventHandlers(blocks, myBlock) {
 	});
 
 	myBlock.container.on('pressup', function(event) {
+		blocks.setDraggingFlag(true);
 	    displayMsg(blocks, 'mousedown->pressup');
 	});
 
